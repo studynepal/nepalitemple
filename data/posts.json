@@ -2,6 +2,18 @@
     {
     "title": "Sunset by the Lake",
     "image": "Images/test.jpg",
+    "description": "This photo was taken. The colors were unreal.",
+    "date": "2026-02-21"
+  },
+   {
+    "title": "Sunset",
+    "image": "Images/test.jpg",
+    "description": "This photo was taken during a The colors were unreal.",
+    "date": "2026-02-21"
+  },
+   {
+    "title": "Sunset Lake",
+    "image": "Images/test.jpg",
     "description": "This photo was taken during a quiet evening by the lake. The colors were unreal.",
     "date": "2026-02-21"
   }

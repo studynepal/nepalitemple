@@ -19,12 +19,19 @@ function renderPage() {
 
   pagePosts.forEach(post => {
     const article = document.createElement("article");
-    article.innerHTML = `
-      <h2>${post.title}</h2>
-      <img src="${post.image}" alt="${post.title}">
-      <p>${post.description}</p>
-      <small>${post.date}</small>
-    `;
+
+article.innerHTML = `
+  <h2>${post.title}</h2>
+  <img src="${post.image}" alt="${post.title}">
+  <p>${post.description}</p>
+  <small>${post.date}</small>
+`;
+
+article.style.cursor = "pointer";
+article.onclick = () => {
+  const index = allPosts.indexOf(post);
+  window.location.href = `post.html?id=${index}`;
+};
     container.appendChild(article);
   });
 
